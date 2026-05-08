@@ -258,13 +258,13 @@ Cualquier software que ejecutemos en nuestro sistema informático, va a procesar
 
 Con los redireccionamientos, podemos indicar a las órdenes qué entrada, salida y salida de errores deben usar, evitando que usen las Standard. Estos redireccionamientos son los siguientes:
 
-| **Operador** | **Descripción**                                                                                                                                      |
-| :----------: | :--------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|     `>`      | Redirecciona `stdout`. Es decir, nos permite indicar una salida para la orden que no sea CON (monitor).                                              |
-|     `2>`     | Redirecciona `stderror`. Es decir, nos permite indicar una salida para los errores de la orden que no sea CON (monitor).                             |
-|     `<`      | Redirecciona `stdin`. Es decir, nos permite indicar una entrada para la orden que no sea CON (teclado).                                              |
-|     `>>`     | **Igual que `>`, pero la salida de la orden se añade a la salida que indiquemos. Con `>` la salida de la orden reescribe la salida que indiquemos.** |
-|      `       | `                                                                                                                                                    | **El indicador de tubería.** Nos permite indicar que la entrada de una orden será la salida de otra orden. Es decir, **el `stdout` de la 1ª orden, será el `stdin` de la 2ª orden.** |
+| **Operador** | **Descripción**                                                                                                                                                                      |
+| :----------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     `>`      | Redirecciona `stdout`. Es decir, nos permite indicar una salida para la orden que no sea CON (monitor).                                                                              |
+|     `2>`     | Redirecciona `stderror`. Es decir, nos permite indicar una salida para los errores de la orden que no sea CON (monitor).                                                             |
+|     `<`      | Redirecciona `stdin`. Es decir, nos permite indicar una entrada para la orden que no sea CON (teclado).                                                                              |
+|     `>>`     | **Igual que `>`, pero la salida de la orden se añade a la salida que indiquemos. Con `>` la salida de la orden reescribe la salida que indiquemos.**                                 |
+|   `&#124;`   | **El indicador de tubería.** Nos permite indicar que la entrada de una orden será la salida de otra orden. Es decir, **el `stdout` de la 1ª orden, será el `stdin` de la 2ª orden.** |
 
 ### Filtros
 
