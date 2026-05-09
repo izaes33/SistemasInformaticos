@@ -109,48 +109,50 @@ Para entornos profesionales, existen métodos de instalación desatendida y a tr
 - **Sistemas de Archivos:** Varían según el entorno principal:  
   <br>
 
-- **Windows 11:** - **NTFS** de forma predeterminada para el sistema.
+- **Windows 11:**
+  - **NTFS** de forma predeterminada para el sistema.
 
-          Permite permisos avanzados, compresión, cifrado, journaling y archivos grandes.
+    Permite permisos avanzados, compresión, cifrado, journaling y archivos grandes.
 
-      - **exFAT y FAT32** para memorias externas.
+  - **exFAT y FAT32** para memorias externas.
 
-          Compatible con Windows, macOS y Linux (con drivers).
+    Compatible con Windows, macOS y Linux (con drivers).
 
-          No tiene journaling → mayor riesgo de corrupción si se corta la energía.
+    No tiene journaling → mayor riesgo de corrupción si se corta la energía.
 
-      - **ReFS** para entornos profesionales y de desarrollo.
+  - **ReFS** para entornos profesionales y de desarrollo.
 
-          Orientado a servidores y desarrolladores.
+    Orientado a servidores y desarrolladores.
 
-          Resiliente frente a corrupción de datos.
+    Resiliente frente a corrupción de datos.
 
   <br>
 
-- **Linux (Ubuntu):** - **ext4** como estándar por su estabilidad.
+- **Linux (Ubuntu):**
+  - **ext4** como estándar por su estabilidad.
 
-      Journaling, grandes tamaños de archivo, muy fiable.
+    Journaling, grandes tamaños de archivo, muy fiable.
 
-      - **Btrfs**
+  - **Btrfs**
 
-      Incluye snapshots, compresión y verificación de integridad.
+    Incluye snapshots, compresión y verificación de integridad.
 
-      Ideal para usuarios avanzados.
+    Ideal para usuarios avanzados.
 
-      - **XFS** para servidores.
+  - **XFS** para servidores.
 
-      Muy rápido con archivos grandes.
+    Muy rápido con archivos grandes.
 
-      Menos flexible al cambiar tamaño de particiones.
+    Menos flexible al cambiar tamaño de particiones.
 
-      - **FAT32 / exFAT / NTFS** (compatibilidad)
+  - **FAT32 / exFAT / NTFS** (compatibilidad)
 
-      Linux puede leer y escribir NTFS y exFAT mediante controladores.
+    Linux puede leer y escribir NTFS y exFAT mediante controladores.
 
   <br>
 
 - **macOS:**
-  - **APFS** de forma predeterminada desde macOS High Sierra
+  - **APFS** de forma predeterminada desde macOS High Sierra.
 
     Optimizado para SSD y NVMe.
 
@@ -162,7 +164,7 @@ Para entornos profesionales, existen métodos de instalación desatendida y a tr
 
   - **exFAT / FAT32**
 
-        Se usa en discos externos para compatibilidad con Windows y Linux.
+    Se usa en discos externos para compatibilidad con Windows y Linux.
 
     <br>
 
