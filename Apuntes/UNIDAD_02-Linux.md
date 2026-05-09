@@ -90,7 +90,7 @@ usuario@usuario-desktop:~\$ Es la cuenta del usuario normal (\$).root@usuario-de
 
 - - Las cuentas de usuario y contraseñas (cifradas) se gestionan a través de los ficheros /etc/passwd y /etc/shadow.
 
-**7\. Variables de Entorno:** Son valores dinámicos o "contenedores" de parámetros que modifican el comportamiento de los procesos en el sistema.
+## **7\. Variables de Entorno:** Son valores dinámicos o "contenedores" de parámetros que modifican el comportamiento de los procesos en el sistema.
 
 Actúan como atajos de texto fáciles de recordar. Te permiten acceder a rutas o configuraciones extremadamente largas y complejas (como la variable Path) usando una sola palabra, lo que ahorra tiempo y evita errores.
 
@@ -98,7 +98,7 @@ Actúan como atajos de texto fáciles de recordar. Te permiten acceder a rutas o
   - **Ver o acceder a una variable:** Se utiliza el símbolo de dólar \$ seguido del nombre de la variable.
   - **Crear o establecer una variable:** Se utiliza el comando export seguido del nombre y el valor que le quieras asignar.
 
-**8\. Ayuda en línea:** Linux proporciona páginas de manuales de ayuda en línea para describir comandos y aplicaciones del sistema con bastante detalle.
+## **8\. Ayuda en línea:** Linux proporciona páginas de manuales de ayuda en línea para describir comandos y aplicaciones del sistema con bastante detalle.
 
 - - **man \[sección\] &lt;orden&gt;:** Es la herramienta clásica de Linux. Muestra el "manual" (man pages) de un comando.
     - **Orden info:** Es una alternativa al comando man. Mientras que man muestra una sola página larga, info suele ofrecer documentación más moderna y estructurada en formato hipertexto.
@@ -149,7 +149,6 @@ En Unix no existe la posibilidad de asignar permisos a usuarios concretos ni a g
     - **Ejecución (x / 1):** Permite ejecutar programas o entrar en directorios.
 
 **\- rw- r-- r--**
-
 └┬┘ └┬┘ └┬┘ └┬┘
 
 │ │ │ └──────> Acceso permitido a alguien que no es dueño - other
