@@ -100,8 +100,8 @@ Actúan como atajos de texto fáciles de recordar. Te permiten acceder a rutas o
 
 ## **8\. Ayuda en línea:** Linux proporciona páginas de manuales de ayuda en línea para describir comandos y aplicaciones del sistema con bastante detalle.
 
-- - **man \[sección\] &lt;orden&gt;:** Es la herramienta clásica de Linux. Muestra el "manual" (man pages) de un comando.
-    - **Orden info:** Es una alternativa al comando man. Mientras que man muestra una sola página larga, info suele ofrecer documentación más moderna y estructurada en formato hipertexto.
+- **man \[sección\] &lt;orden&gt;:** Es la herramienta clásica de Linux. Muestra el "manual" (man pages) de un comando.
+  - **Orden info:** Es una alternativa al comando man. Mientras que man muestra una sola página larga, info suele ofrecer documentación más moderna y estructurada en formato hipertexto.
 
 ## **9\. ¿Qué es el PATH?**
 
@@ -148,7 +148,8 @@ En Unix no existe la posibilidad de asignar permisos a usuarios concretos ni a g
     - **Escritura (w / 2):** Permite modificar, añadir o borrar .
     - **Ejecución (x / 1):** Permite ejecutar programas o entrar en directorios.
 
-**\- rw- r-- r--**
+**\- .. rw- .. r-- .. r--**
+
 └┬┘ └┬┘ └┬┘ └┬┘
 
 │ │ │ └──────> Acceso permitido a alguien que no es dueño - other
