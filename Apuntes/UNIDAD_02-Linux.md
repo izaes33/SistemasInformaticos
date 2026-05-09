@@ -162,7 +162,7 @@ En Unix no existe la posibilidad de asignar permisos a usuarios concretos ni a g
 
 Con el comando **ls -l** podemos visualizar los permisos de los archivos o carpetas. Al ejecutar el comando aparecen todos los archivos, uno por línea.
 
-El primer carácter indica de qué tipo de archivo se trata:
+<u>El primer carácter indica de qué tipo de archivo se trata:
 
 \- Si es un guión '-' significa que se trata de un archivo normal.
 
@@ -171,6 +171,7 @@ El primer carácter indica de qué tipo de archivo se trata:
 \- La letra 'l' significa que se trata de un enlace (link).
 
 \- Otros valores son s, p, b que se refieren a sockets, tuberías (pipe) y dispositivos de bloque respectivamente.
+</u>
 
 ## **12\. Cambio de permisos**
 
