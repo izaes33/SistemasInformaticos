@@ -148,7 +148,7 @@ En Unix no existe la posibilidad de asignar permisos a usuarios concretos ni a g
   - **Escritura (w / 2):** Permite modificar, añadir o borrar .
   - **Ejecución (x / 1):** Permite ejecutar programas o entrar en directorios.
 
-**\- ...... rw- .. r-- .. r--**
+**\- ......... rw- .. r-- .. r--**
 
 └┬┘ └┬┘ └┬┘ └┬┘
 
@@ -184,9 +184,9 @@ El primer carácter indica de qué tipo de archivo se trata:
 
 Este método utiliza letras para definir quién recibe el permiso, qué acción se realiza y qué tipo de permiso se otorga:
 
-- - **A quién:** u (usuario/dueño), g (grupo), o (otros/resto).
-    - **Acción:** + (añadir permiso) o - (quitar permiso).
-    - **Tipo de permiso:** r (lectura), w (escritura), x (ejecución).
+- **A quién:** u (usuario/dueño), g (grupo), o (otros/resto).
+  - **Acción:** + (añadir permiso) o - (quitar permiso).
+  - **Tipo de permiso:** r (lectura), w (escritura), x (ejecución).
 
 **Ejemplo:** chmod ug+rw notas.txt (Añade permisos de lectura y escritura al usuario y al grupo).
 
@@ -196,11 +196,11 @@ Utiliza un código de tres cifras (del 0 al 7) para asignar permisos rápidament
 
 Los números surgen de una lógica binaria donde cada bit representa un permiso. Los valores resultantes más importantes son:
 
-- - **0**: Ningún permiso (---).
-    - **4**: Sólo lectura (r--).
-    - **5**: Lectura y ejecución (r-x).
-    - **6**: Lectura y escritura (rw-).
-    - **7**: Todos los permisos (rwx).
+- **0**: Ningún permiso (---).
+  - **4**: Sólo lectura (r--).
+  - **5**: Lectura y ejecución (r-x).
+  - **6**: Lectura y escritura (rw-).
+  - **7**: Todos los permisos (rwx).
 
 **Ejemplos prácticos de modo numérico:**
 
