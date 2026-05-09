@@ -77,18 +77,18 @@ Esta organización no es una coincidencia, sino que se rige por un documento ofi
 
 Esto es útil para administrar bases de datos, servidores web y otros servicios que disponen de usuarios específicos para realizar diferentes tareas de administración.
 
-- - Después de ingresar tu contraseña tendrás 15 minutos para seguir utilizando la cuenta como superusuario. Pasado este tiempo volverás a tener los privilegios de tu cuenta de usuario normal.
+- Después de ingresar tu contraseña tendrás 15 minutos para seguir utilizando la cuenta como superusuario. Pasado este tiempo volverás a tener los privilegios de tu cuenta de usuario normal.
 
 Pero si queremos tener privilegios de superusuario de forma permanente sin necesidad de ingresar SUDO varias veces podemos ejecutar en la terminal: **sudo su .**
 
-- - En algunas distribuciones de Linux (Ubuntu, Kubuntu) la cuenta de superusuario viene desactivada por defecto. En estos casos, la cuenta de usuario que creamos al instalar la distribución no es la misma que la cuenta de root o superusuario, sino que pertenece al grupo de administradores. Para obtener privilegios de root se utiliza el comando SUDO.
-    - Antes de cerrar el terminal, es recomendable volver a nuestro propio usuariocon un simple exit.
+- En algunas distribuciones de Linux (Ubuntu, Kubuntu) la cuenta de superusuario viene desactivada por defecto. En estos casos, la cuenta de usuario que creamos al instalar la distribución no es la misma que la cuenta de root o superusuario, sino que pertenece al grupo de administradores. Para obtener privilegios de root se utiliza el comando SUDO.
+  - Antes de cerrar el terminal, es recomendable volver a nuestro propio usuariocon un simple exit.
 
 Para saber con qué usuario estás logueado, basta con observar el símbolo de la línea de comandos:
 
 usuario@usuario-desktop:~\$ Es la cuenta del usuario normal (\$).root@usuario-desktop:~# Es la cuenta de root (#).
 
-- - Las cuentas de usuario y contraseñas (cifradas) se gestionan a través de los ficheros /etc/passwd y /etc/shadow.
+- Las cuentas de usuario y contraseñas (cifradas) se gestionan a través de los ficheros /etc/passwd y /etc/shadow.
 
 ## **7\. Variables de Entorno:** Son valores dinámicos o "contenedores" de parámetros que modifican el comportamiento de los procesos en el sistema.
 
@@ -115,9 +115,9 @@ Para saber dónde está instalado un comando, usamos whereis.
 
 (Si usamos \$ whereis ls , el sistema nos dirá que el archivo binario ejecutable de ls está guardado en la ruta /usr/bin/ls).
 
-- - **Dos formas de ejecutar un programa:**
-    - **Ruta absoluta:** Se puede llamar al programa escribiendo su dirección completa: \$ /usr/bin/ls.
-    - **Ejecución directa:** Simplemente escribiendo \$ ls.
+- **Dos formas de ejecutar un programa:**
+  - **Ruta absoluta:** Se puede llamar al programa escribiendo su dirección completa: \$ /usr/bin/ls.
+  - **Ejecución directa:** Simplemente escribiendo \$ ls.
 
 Precisamente gracias al PATH. Al escribir ls, el sistema lee la variable PATH y empieza a buscar el archivo "ls" carpeta por carpeta en el orden en el que están listadas. Como la carpeta /usr/bin (donde sabemos que está ls) forma parte del PATH, el sistema lo encuentra y lo ejecuta automáticamente sin tener que decirle dónde está.
 
@@ -144,11 +144,11 @@ Para ver las carpetas donde el sistema busca los programas se ejecuta \$ echo \$
 
 En Unix no existe la posibilidad de asignar permisos a usuarios concretos ni a grupos concretos, tan solo se puede asignar permisos al usuario propietario, al grupo propietario o al resto de usuarios.
 
-- - **Lectura (r / 4):** Permite ver contenido o listar directorios .
-    - **Escritura (w / 2):** Permite modificar, añadir o borrar .
-    - **Ejecución (x / 1):** Permite ejecutar programas o entrar en directorios.
+- **Lectura (r / 4):** Permite ver contenido o listar directorios .
+  - **Escritura (w / 2):** Permite modificar, añadir o borrar .
+  - **Ejecución (x / 1):** Permite ejecutar programas o entrar en directorios.
 
-**\- .. rw- .. r-- .. r--**
+**\- ...... rw- .. r-- .. r--**
 
 └┬┘ └┬┘ └┬┘ └┬┘
 
