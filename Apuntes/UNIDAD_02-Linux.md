@@ -148,7 +148,7 @@ En Unix no existe la posibilidad de asignar permisos a usuarios concretos ni a g
   - **Escritura (w / 2):** Permite modificar, añadir o borrar .
   - **Ejecución (x / 1):** Permite ejecutar programas o entrar en directorios.
 
-**\- ......... rw- .. r-- .. r--**
+**.. \- ...... rw- .. r-- .. r--**
 
 └┬┘ └┬┘ └┬┘ └┬┘
 
