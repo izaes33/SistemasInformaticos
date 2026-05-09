@@ -146,23 +146,21 @@ En Unix no existe la posibilidad de asignar permisos a usuarios concretos ni a g
 
 - **Lectura (r / 4):** Permite ver contenido o listar directorios .
   - **Escritura (w / 2):** Permite modificar, añadir o borrar .
-  - **Ejecución (x / 1):** Permite ejecutar programas o entrar en directorios.
+  - **Ejecución (x / 1):** Permite ejecutar programas o entrar en directorios.  
+    <br>
 
-**.. \- ...... rw- .. r-- .. r--**
+```text
+-   rw-  r--  r--
+┬    ┬    ┬    ┬
+│    │    │    └──────> Acceso permitido a alguien que no es dueño - other
+│    │    └───────────> Acceso permitido a los miembros del grupo - group
+│    └────────────────> Acceso permitido al dueño - user
+└─────────────────────> Tipo de archivo (archivo, directorio, dispositivo, etc)
+```
 
-└┬┘ └┬┘ └┬┘ └┬┘
+<br>
 
-│ │ │ └──────> Acceso permitido a alguien que no es dueño - other
-
-│ │ └───────────> Acceso permitido a los miembros del grupo - group
-
-│ └────────────────> Acceso permitido al dueño - user
-
-└────────────────────> Tipo de archivo (archivo, directorio, dispositivo, etc)
-
-Con el comando **ls -l** podemos visualizar los permisos de los archivos o carpetas. Al ejecutar el comando aparecen todos los archivos, uno por línea.
-
-<u>El primer carácter indica de qué tipo de archivo se trata:</u>
+**El primer carácter indica de qué tipo de archivo se trata:**
 
 \- Si es un **guión** '-' significa que se trata de un **archivo normal.**
 
