@@ -5,7 +5,8 @@
 - **Definición:** Cuando hablamos de Linux, nos referimos al núcleo (Kernel) del sistema operativo. Una distribución de Linux incluye este núcleo junto con paquetes de aplicaciones .
 - **Distribuciones:** Existen diversas distribuciones clasificadas en genéricas (Ubuntu, Debian, CentOS), para empresas (Red Hat), seguridad (Kali, Tails) y otros usos .
 - **Licencias:** El Kernel de Linux es software libre y de código abierto (GPL), garantizando a los usuarios la libertad de usar, modificar y distribuir el programa (Estas licencias deben ser aprobadas por la Open Source Initiative (OSI) y tener denominación GPL).
-- Una **distribución** de Linux es el sistema operativo completo, que incluye el núcleo del sistema (Kernel), diversas aplicaciones y, habitualmente, uno de estos entornos de escritorio:
+- Una **distribución** de Linux es el sistema operativo completo, que incluye el núcleo del sistema (Kernel), diversas aplicaciones y, habitualmente, uno de estos entornos de escritorio:  
+  <br>
 
 ## **2\.** Entornos **de Escritorio**
 
@@ -14,7 +15,8 @@ Un entorno de escritorio es la interfaz gráfica (las ventanas, los menús, los 
 - **Diversidad de interfaces:** Linux ofrece múltiples entornos gráficos adaptados a diferentes necesidades y recursos del sistema:
   - **Unity y Gnome:** Modernos, modulables y amigables para el usuario (usados frecuentemente en Ubuntu) .
   - **KDE y Pantheon:** Interfaces similares a Windows y MacOS X respectivamente .
-  - **LXDE y XFCE:** Entornos ligeros diseñados para ordenadores con pocos recursos.
+  - **LXDE y XFCE:** Entornos ligeros diseñados para ordenadores con pocos recursos.  
+    <br>
 
 ## **3\.** Paquetes
 
@@ -25,7 +27,8 @@ No todos los sistemas Linux son idénticos; existen distintas "distribuciones" (
 - **DEB:** Es el formato que utilizan distribuciones muy populares como Ubuntu, Linux Mint, Kubuntu y ZorinOS. Este archivo ya trae la aplicación lista para usarse (ejecutables), junto con sus archivos de configuración, manuales (documentación).
 - **RPM:** Este lo utilizan sistemas de la familia RedHat, como Fedora o openSUSE. Su mayor ventaja es cómo maneja las actualizaciones.
 - **Ebuild:** Es un formato exclusivo de una distribución llamada Gentoo. No es un programa empaquetado como tal, sino que son _scripts de Bash_ (archivos de texto con una serie de comandos) que le dan las instrucciones exactas a tu ordenador sobre cómo descargar, preparar y compilar el programa desde cero.
-- **TGZ:** A diferencia de los anteriores, estos paquetes suelen contener el **código fuente** de la aplicación, que deberá ser compilado a código máquina.
+- **TGZ:** A diferencia de los anteriores, estos paquetes suelen contener el **código fuente** de la aplicación, que deberá ser compilado a código máquina.  
+  <br>
 
 ## **4\.** Ubuntu
 
@@ -45,7 +48,8 @@ Es una distribución de Linux orientada a la facilidad de uso, ideal para usuari
   - **Procesador de 32 bits a 700 MHz.**
   - 512 MB de memoria RAM.
   - 5 GB de espacio libre en el disco duro.
-  - Tarjeta gráfica y monitor compatibles con una resolución mínima de 1024x768.
+  - Tarjeta gráfica y monitor compatibles con una resolución mínima de 1024x768.  
+    <br>
 
 ## **5\.** Sistema **de archivos en Linux**
 
@@ -67,7 +71,8 @@ Esta organización no es una coincidencia, sino que se rige por un documento ofi
 - **Dispositivos y Procesos**
   - /**dev**: Contiene los ficheros que representan los dispositivos físicos de hardware conectados.
   - /**mnt**: Es el directorio o carpeta principal que se usa como "punto de montaje" para acceder a dispositivos externos (como USBs) o recursos de red.
-  - /**proc**: Es un directorio virtual. No ocupa espacio real en el disco, sino que muestra información en tiempo real sobre el hardware y los programas que se están ejecutando.
+  - /**proc**: Es un directorio virtual. No ocupa espacio real en el disco, sino que muestra información en tiempo real sobre el hardware y los programas que se están ejecutando.  
+    <br>
 
 ## **6\. Administración del Sistema**
 
@@ -88,7 +93,8 @@ Para saber con qué usuario estás logueado, basta con observar el símbolo de l
 
 usuario@usuario-desktop:~\$ Es la cuenta del usuario normal (\$).root@usuario-desktop:~# Es la cuenta de root (#).
 
-- Las cuentas de usuario y contraseñas (cifradas) se gestionan a través de los ficheros /etc/passwd y /etc/shadow.
+- Las cuentas de usuario y contraseñas (cifradas) se gestionan a través de los ficheros /etc/passwd y /etc/shadow.  
+  <br>
 
 ## **7\. Variables de Entorno:** Son valores dinámicos o "contenedores" de parámetros que modifican el comportamiento de los procesos en el sistema.
 
@@ -96,12 +102,14 @@ Actúan como atajos de texto fáciles de recordar. Te permiten acceder a rutas o
 
 - **Gestión de Variables (Comandos)**
   - **Ver o acceder a una variable:** Se utiliza el símbolo de dólar \$ seguido del nombre de la variable.
-  - **Crear o establecer una variable:** Se utiliza el comando export seguido del nombre y el valor que le quieras asignar.
+  - **Crear o establecer una variable:** Se utiliza el comando export seguido del nombre y el valor que le quieras asignar.  
+    <br>
 
 ## **8\. Ayuda en línea:** Linux proporciona páginas de manuales de ayuda en línea para describir comandos y aplicaciones del sistema con bastante detalle.
 
 - **man \[sección\] &lt;orden&gt;:** Es la herramienta clásica de Linux. Muestra el "manual" (man pages) de un comando.
-  - **Orden info:** Es una alternativa al comando man. Mientras que man muestra una sola página larga, info suele ofrecer documentación más moderna y estructurada en formato hipertexto.
+  - **Orden info:** Es una alternativa al comando man. Mientras que man muestra una sola página larga, info suele ofrecer documentación más moderna y estructurada en formato hipertexto.  
+    <br>
 
 ## **9\. ¿Qué es el PATH?**
 
@@ -121,7 +129,8 @@ Para saber dónde está instalado un comando, usamos whereis.
 
 Precisamente gracias al PATH. Al escribir ls, el sistema lee la variable PATH y empieza a buscar el archivo "ls" carpeta por carpeta en el orden en el que están listadas. Como la carpeta /usr/bin (donde sabemos que está ls) forma parte del PATH, el sistema lo encuentra y lo ejecuta automáticamente sin tener que decirle dónde está.
 
-Para ver las carpetas donde el sistema busca los programas se ejecuta \$ echo \$PATH.
+Para ver las carpetas donde el sistema busca los programas se ejecuta \$ echo \$PATH.  
+<br>
 
 ## **10\. Ejecución en segundo plano**
 
@@ -136,7 +145,8 @@ Para ver las carpetas donde el sistema busca los programas se ejecuta \$ echo \$
   - Utilizar herramientas de visualización del sistema, como el **comando** clásico **ps** (**o top**), para obtener esta información.
 - **Detener o eliminar un proceso**
   - Utilizar la **orden kill** seguida del identificador del proceso (PID) para cancelar la ejecución, detener un programa bloqueado o corregir una equivocación.
-  - Escribir **kill %1 para mandar la señal de terminación de forma rápida y directa al trabajo que se encuentra en la parte superior de la pila** de trabajos en segundo plano.
+  - Escribir **kill %1 para mandar la señal de terminación de forma rápida y directa al trabajo que se encuentra en la parte superior de la pila** de trabajos en segundo plano.  
+    <br>
 
 ## **11\. Permisos y Propiedad de Archivos**
 
@@ -168,7 +178,8 @@ En Unix no existe la posibilidad de asignar permisos a usuarios concretos ni a g
 
 \- La **letra 'l'** significa que se trata de un **enlace (link).**
 
-\- Otros valores son **s, p, b que se refieren a sockets, tuberías (pipe) y dispositivos de bloque respectivamente.**
+\- Otros valores son **s, p, b que se refieren a sockets, tuberías (pipe) y dispositivos de bloque respectivamente.**  
+<br>
 
 ## **12\. Cambio de permisos**
 
@@ -206,7 +217,8 @@ chmod 700 examenSI.txt: Todos los permisos para el usuario, ninguno para el grup
 
 chmod 755 /usr/bin/games/csgo: Todos los permisos al usuario; lectura y ejecución al grupo y al resto.
 
-chmod 744 \*: Todos los permisos al usuario; sólo lectura al resto, aplicándolo a todos los archivos.
+chmod 744 \*: Todos los permisos al usuario; sólo lectura al resto, aplicándolo a todos los archivos.  
+<br>
 
 ## **13\. Cambio de propietarios**
 
@@ -218,12 +230,14 @@ La estructura básica para utilizarlo es:
 
 Ejemplo
 
-\>/ chown aitor.users prueba
+\>/ chown aitor.users prueba  
+<br>
 
 ## **14\. Gestión de Dispositivos y Almacenamiento**
 
 - **Sistemas de Ficheros:** Para acceder a una unidad (como un CD, disco duro o pendrive) es necesario montarla en un directorio usando mount y desmontarla con umount.
-- **Arranque y Mantenimiento:** El archivo /etc/fstab controla los dispositivos montados al arrancar, mientras que comandos como fsck y mkfs se utilizan para verificar y formatear unidades.
+- **Arranque y Mantenimiento:** El archivo /etc/fstab controla los dispositivos montados al arrancar, mientras que comandos como fsck y mkfs se utilizan para verificar y formatear unidades.  
+  <br>
 
 ## **15\. Comandos Básicos para la Administración**
 
@@ -233,7 +247,8 @@ Ejemplo
 - **Procesos y Rendimiento:** ps, top y htop para ver recursos, y kill para terminar tareas, además del envío de procesos a segundo plano usando &.
 - **Paquetes:** Uso de apt-get (descarga e instalación en red) o dpkg (archivos locales .deb) para gestionar software.
 - **Compresión:** Utilidades como tar, gzip, zip y rar para agrupar y comprimir datos .
-- **Redes:** Comandos como ifconfig (interfaces de red), route (rutas), netstat (conexiones) e iptables (configuración del cortafuegos).
+- **Redes:** Comandos como ifconfig (interfaces de red), route (rutas), netstat (conexiones) e iptables (configuración del cortafuegos).  
+  <br>
 
 **Gestión de Archivos y Directorios**
 
