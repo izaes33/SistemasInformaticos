@@ -94,7 +94,7 @@ Existen más de 15 tipos de RAID distintos o variaciones de ellos, aunque cada u
 - **RAID 1 (Espejo/Mirroring):** Duplica la misma información en dos discos (existe un disco primario, donde se leen y se escriben los datos, y un disco espejo, donde solamente se escriben las modificaciones y en el que se leerán datos cuando el primario falle. ). **Ventaja:** Alta seguridad frente a fallos. **Desventaja:** Pierdes el 50% de la capacidad total del almacenamiento. Coste económico.
 - **RAID 5 (Paridad):** Reparte los datos y la "paridad" (códigos de recuperación) entre al menos 3 discos. Ofrece un gran equilibrio: es rápido en lectura y permite que **falle 1 disco** sin perder datos.
 - **RAID 6:** Necesita un **mínimo de 4 discos.** Similar al RAID 5 pero con doble paridad, lo que permite que **fallen 2 discos** simultáneamente sin perder información.
-- **RAID 10:** Es una combinación de RAID 1 y RAID 0 que requiere un número par de discos (mínimo 4). Ofrece un rendimiento muy alto y alta seguridad, pero con un coste elevado (solo aprovecha el 50% del espacio).
+- **RAID 10:** Es una combinación de RAID 1 y RAID 0 que requiere un número par de discos (mínimo 4). Ofrece un rendimiento muy alto y alta seguridad, pero con un coste elevado (solo aprovecha el 50% del espacio).  
   <br>
 
 _Más allá de que RAID 1 necesita un mínimo de 2 discos y RAID 5 un mínimo de 3, las diferencias reales entre ellos radican en_ **_cómo protegen la información, el espacio que desperdician y su rendimiento_**_._
